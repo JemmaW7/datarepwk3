@@ -2,6 +2,7 @@ import Movies from "./Movies";
 
 const Read = () => {
 
+    // defining a static array of movie objects to pass as props to the Movies component
     const moviesData = [
         {
           "Title": "Avengers: Infinity War",
@@ -29,6 +30,7 @@ const Read = () => {
     return(
         <div>
             <h3>Hello from the Read component</h3>;
+            {/* passing moviesData as the myMovie prop to the Movies component */}
             <h3><Movies myMovie={moviesData}/></h3>;
         </div>
       
